@@ -136,7 +136,7 @@ async function playSong(connection, searchQuery, message) {
       .setDescription(`\n ‎ \n▶️ **Details :** [${video.title}](${youtubeLink}) \n▶️ **If link breaks playback try to give query**`)
       .setThumbnail(video.thumbnails.high.url) 
       .setColor('#2b71ec')
-      .setFooter(` more info use help command`);
+      .setFooter({ text: 'More info - Use Help command Default : ..help' });
 
     const row = new ActionRowBuilder()
       .addComponents(

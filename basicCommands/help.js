@@ -14,10 +14,10 @@ module.exports = {
       .setAuthor({
         name: 'Im here to Help!',
         iconURL: 'https://cdn.discordapp.com/attachments/1175487983915376662/1175667506791325706/communication.png?ex=656c10b0&is=65599bb0&hm=e378f1b355a2401bcab504b08a0766001d6b7c090c91ce0a7a7a87c868feb955&', 
-        url: 'https://discord.gg/FUEHs7RCqz'
+        url: 'https://discord.gg/aGeeMwkJ2b'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [GlaceYT](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n\n__**COMMANDS :**__ `)
       .addFields(
         // Basic commands category
         {
@@ -34,7 +34,7 @@ module.exports = {
         //fun category
         {
           name: '▶️  Fun',
-          value: ' `ascii`, `joke`, `meme`, `roll`',
+          value: ' `joke`,`roll`',
           inline: true,
         },
         //image category
@@ -57,21 +57,21 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://cdn.discordapp.com/attachments/1170652474563117138/1224660177039396876/MULTI_MUSIC_v1.5.png?ex=661e4cab&is=660bd7ab&hm=f7a542462fabaf9c1530ece5aa72597cff3ac032876bba46df5ddba7e122ea99&`);
+      
 
     const button1 = new ButtonBuilder()
-      .setLabel('YouTube')
-      .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
+      .setLabel('Facebook')
+      .setURL('https://www.facebook.com/batin.hub69')
       .setStyle(ButtonStyle.Link);
 
     const button2 = new ButtonBuilder()
       .setLabel('Discord')
-      .setURL('https://discord.gg/FUEHs7RCqz')
+      .setURL('https://discord.gg/aGeeMwkJ2b')
       .setStyle(ButtonStyle.Link);
 
     const button3 = new ButtonBuilder()
-      .setLabel('Code')
-      .setURL('https://replit.com/@BEASTGAMERS1/MULTI-MUSIC-BOT-v200?v=1')
+      .setLabel('Youtube')
+      .setURL('https://www.youtube.com/@batin.hub69')
       .setStyle(ButtonStyle.Link);
       
     const row = new ActionRowBuilder()

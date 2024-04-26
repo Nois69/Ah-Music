@@ -4,6 +4,7 @@ const { getPlayer } = require('./play');
 
 module.exports = {
   name: 'volume',
+    aliases: ["vol"],
   description: 'Adjust the volume of the bot',
   execute: async (message, args) => {
     const volume = parseFloat(args[0]);
@@ -28,7 +29,7 @@ module.exports = {
      .setAuthor({
           name: 'Volume Control!',
           iconURL: 'https://cdn.discordapp.com/attachments/1175488636033175602/1175488721546645624/volume.png?ex=656b6a2e&is=6558f52e&hm=8215d2f88ab073db1f3b6438c28fd73315ad7e581bb54000dbb06fca387cecf7&',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          url: 'https://discord.gg/aGeeMwkJ2b'
         })
       .setDescription(`**volume engaged to ${volume}%**`);
 

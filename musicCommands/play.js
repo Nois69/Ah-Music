@@ -133,7 +133,7 @@ async function playSong(connection, searchQuery, message) {
         iconURL: 'https://cdn.discordapp.com/attachments/1140841446228897932/1144671132948103208/giphy.gif', 
         url: 'https://discord.gg/aGeeMwkJ2b'
       })
-      .setDescription(`\n ‎ \n▶️ **Details :** [${video.title}](${youtubeLink}) \n▶️ **If link breaks playback try to give query**`)
+      .setDescription(`\n ‎ \n▶️ **Now Playing :** [${video.title}](${youtubeLink}) \n▶️ **If link breaks playback try to give query**`)
       .setThumbnail(video.thumbnails.high.url) 
       .setColor('#2b71ec')
       .setFooter({ text: 'More info - Use Help command Default : ..help' });
@@ -320,7 +320,7 @@ module.exports = {
     })
         .setDescription(`**Your song has been queued up and is ready to play!**`)
         .setColor('#14bdff')
-        .setFooter({ text: 'Use ?queue for more Information' });
+        .setFooter({ text: 'Use ..queue for more Information' });
       return message.reply({ embeds: [embed] });
     }
 

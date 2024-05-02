@@ -39,7 +39,7 @@ const { printWatermark } = require('./functions/handlers');const distube = new D
   searchSongs: 0,
   emitNewSongOnly: true,
   leaveOnEmpty: true,
-  leaveOnFinish: true,
+  leaveOnFinish: false,
   leaveOnStop: true,
 });
 const prefixData = require('./prefix.json');
@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
   res.sendFile(imagePath);
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to GlaceYT : http://localhost:${port}`);
+  console.log(`🔗 Listening to AH FRIK : http://localhost:${port}`);
 });
 printWatermark();
 
@@ -143,7 +143,7 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `..help`, type: ActivityType.Watching }],
+      activities: [{ name: `..help|${client.guilds.cache.size} servers `, type: ActivityType.Watching }],
       status: 'idle',
     });
   }, 2000); 
